@@ -14,5 +14,17 @@ const netflix = async() => {
 	data = await response.json()
 
 	console.log(data);
+
+	film = data.results
+	film.forEach(element => {
+		console.log(element);
+		var imgLink = element.img
+
+		img = document.createElement('img')
+
+		img.src = imgLink
+
+		document.getElementById('row-poster').appendChild(img)
+	});
 }
 netflix();

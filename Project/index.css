@@ -13,22 +13,29 @@ body{
     color: azure;
 }
 
-#row-poster img{
+.row h2{
+    padding-left: 1%;
+    margin-bottom: 0.5%;
+}
+
+#row-poster1 img{
     width: 100%;
     object-fit: contain;
     max-height: 250px;
-    margin-right: 10px;
+    margin-right: 1%;
     transition: trasform 450ms;
 }
 
-#row-poster {
+#row-poster1 {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 20px;
+    padding-top: 5px;
+    padding-bottom: 3%;
 }
 
-#row-poster img:hover {
+#row-poster1 img:hover {
     transform: scale(1.08);
 }
 
@@ -89,3 +96,4 @@ body{
     height: 13.6rem;
     background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
+

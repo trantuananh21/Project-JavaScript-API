@@ -24,7 +24,8 @@ const netflix = async() => {
 
 		img.src = imgLink
 
-		document.getElementById('row-poster').appendChild(img)
+		document.getElementById('row-poster1').appendChild(img)
 	});
+
 }
 netflix();

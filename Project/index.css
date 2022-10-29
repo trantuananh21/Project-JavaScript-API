@@ -30,9 +30,7 @@ body{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 20px;
-    padding-top: 5px;
-    padding-bottom: 3%;
+    padding: 1%;
 }
 
 #row-poster1 img:hover {
@@ -40,13 +38,13 @@ body{
 }
 
 .banner {
+    height: 100%;
+    width: 100%;
     background-image: url("https://www.ilquotidianoitaliano.com/wp-content/uploads/2022/07/stranger-things.jpg");
     background-size: cover;
-    background-position: center ;
+    background-position: center center;
     color: white;
     object-fit: contain;
-    height: 550px;
-    width: 100%;
 }
 
 .banner-content{
@@ -56,7 +54,7 @@ body{
 }
 
 .banner-title{
-    font-size: 3rem;
+    font-size: 300%;
     font-weight: 800;
     padding-bottom: 0.3rem;
 }

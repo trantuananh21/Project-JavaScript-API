@@ -15,17 +15,28 @@ const netflix = async() => {
 
 	console.log(data);
 
+	var count = 0;
+
 	film = data.results
 	film.forEach(element => {
 		console.log(element);
 		var imgLink = element.img
+		count++
 
 		img = document.createElement('img')
 
 		img.src = imgLink
 
-		document.getElementById('row-poster1').appendChild(img)
-	});
+		if (count >= 1 & count <= 40){	
+			document.getElementById('row-poster1').appendChild(img)
+		}
+		if (count >= 41 & count <= 80){
+				document.getElementById('row-poster2').appendChild(img)
+		}
 
+		if (count >= 81 & count <= 100){
+			document.getElementById('row-poster3').appendChild(img)
+		}
+	});
 }
 netflix();

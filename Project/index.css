@@ -18,6 +18,10 @@ body{
     margin-bottom: 0.5%;
 }
 
+.row-title {
+    font-weight: 540;
+    font-size: 140%;
+}
 /* Row 1 */
 #row-poster1 img{
     width: 100%;
@@ -32,6 +36,10 @@ body{
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 1%;
+}
+
+#row-poster1 h2{
+    font-weight: 1;
 }
 
 #row-poster1 img:hover {

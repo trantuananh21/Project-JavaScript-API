@@ -22,16 +22,28 @@ body{
     font-weight: 540;
     font-size: 140%;
 }
+
+.content-details{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.content-details h3{
+    margin: 0;
+    padding: 0;
+}
+
 /* Row 1 */
 #row-poster1 img{
     width: 100%;
     object-fit: contain;
     max-height: 250px;
     margin-right: 1%;
-    transition: trasform 450ms;
+    transition: 450ms;
 }
 
-#row-poster1 {
+#images1 {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -42,8 +54,17 @@ body{
     font-weight: 1;
 }
 
-#row-poster1 img:hover {
+#images1 img:hover {
     transform: scale(1.08);
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.content-deatails{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 5%;
 }
 
 /* Row 2 */
@@ -52,18 +73,19 @@ body{
     object-fit: contain;
     max-height: 250px;
     margin-right: 1%;
-    transition: trasform 450ms;
+    transition: 450ms;
 }
 
-#row-poster2 {
+#images2 {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 1%;
 }
 
-#row-poster2 img:hover {
+#images2 img:hover {
     transform: scale(1.08);
+    cursor: pointer;
 }
 
 /* Row 3 */
@@ -72,24 +94,26 @@ body{
     object-fit: contain;
     max-height: 250px;
     margin-right: 1%;
-    transition: trasform 450ms;
+    transition: 450ms;
 }
 
-#row-poster3 {
+#images3 {
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 1%;
 }
 
-#row-poster3 img:hover {
+#images3 img:hover {
     transform: scale(1.08);
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar{
     display: none;
 }
 
+/* banner */
 .banner {
     height: 100%;
     width: 100%;

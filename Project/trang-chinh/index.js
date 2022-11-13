@@ -61,3 +61,4 @@ const netflix = async() => {
 	});
 }
 netflix();
+o oitiet 

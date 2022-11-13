@@ -9,8 +9,85 @@ body{
     margin: 0;
 }
 
+.mainnav{
+    font-family:serif;
+    position:fixed;
+    background-color: black;
+    width: 1700px;
+    /* height: 20vh; */
+    display:flex;
+}
+.forminput{
+    display: flex;
+    padding: 40px 40px 40px 90px!important;
+    
+}
+.forminput button{
+    
+    background-image: linear-gradient(to right,purple,blue,green,yellow,red,orange);
+}
+.mainul{
+    float: right;
+    display: flex;
+
+}
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    color :red;
+    display: block;
+    height: 6vh;
+    padding: 20px 50px 60px 60px;
+    margin-right: 20px;
+    
+}
+
+.li1 a:hover{
+    background-color: red;
+    color :white;
+}
+.dropupbutton{
+    background-color: black;
+    color: red;
+    padding :36px 50px 60px 60px;
+    height: 6vh;
+    font-size: 16px;
+    border: none;
+    /* display: block; */
+}
+.dropup{
+    position: relative;
+    display: inline-block;
+}
+.thedropupcontent{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    top: 98px;
+    z-index: 1;
+}
+.thedropupcontent a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.thedropupcontent a:hover{
+    background-color: green;
+}
+.dropup:hover .thedropupcontent{
+    display: block;
+}
+.dropup:hover .dropupbutton{
+    background-color: red;
+    color: white;
+}
+
+
 .row{
     color: azure;
+    
 }
 
 .row h2{
@@ -24,7 +101,7 @@ body{
 }
 /* Row 1 */
 #row-poster1 img{
-    width: 100%;
+    width: 50px;
     object-fit: contain;
     max-height: 250px;
     margin-right: 1%;
@@ -48,7 +125,7 @@ body{
 
 /* Row 2 */
 #row-poster2 img{
-    width: 100%;
+    width: 50px ;
     object-fit: contain;
     max-height: 250px;
     margin-right: 1%;
@@ -68,7 +145,7 @@ body{
 
 /* Row 3 */
 #row-poster3 img{
-    width: 100%;
+    width: 50px;
     object-fit: contain;
     max-height: 250px;
     margin-right: 1%;
@@ -90,6 +167,7 @@ body{
     display: none;
 }
 
+
 .banner {
     height: 100%;
     width: 100%;
@@ -102,17 +180,25 @@ body{
 
 .banner-content{
     margin-left: 30px;
-    padding-top: 140px;
-    height: 190px;
+    padding-top: 100px;
+    height: 100px;
+    padding-bottom: 60vh;
 }
 
 .banner-title{
     font-size: 300%;
     font-weight: 800;
     padding-bottom: 0.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+.bannerbtndct{
+    background-color: black;
+    width: 400px;
+    
 }
 
 .banner-description {
+    
     width: 45rem;
     line-height: 1.3;
     padding-top: 1rem;
@@ -122,18 +208,20 @@ body{
 }
 
 .banner-button{
+    
     cursor: pointer;
     color: #fff;
     outline: none;
     border: none;
     font-weight: 700;
     border-radius: 0.2vw;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    margin-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: rgba(51, 51, 51, 0.5 )
+
 }
 
 .banner-button:hover {
@@ -144,7 +232,58 @@ body{
 
 .banner-fade-bottom{
     margin-top: 145px;
-    height: 13.6rem;
+    height: 13.6vh;
     background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
+footer{
+    margin-top: 20px;
+    display: flex;
+    background-color : rgb(45, 22, 22);
+    justify-content: space-around;
+    height: 35vh;
+    
+}
+footer .footernetflix img{
+    padding-top: 10px;
+}
+.mainh1{
+    color:green;
+}
+.theanotherimg img{
+    margin-left: 30px;
+    
+}
+.footernetflix{
+    display: flex;
+    color: red;
+}
+.smallone{
+    color :white;
+    padding-left: 20px;
+}
 
+.thesecond{
+    font-size: 20px;
+    color:rgb(66, 59, 59);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.thethird{
+    font-size: 20px;
+    color: rgb(66, 59, 59);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+span{
+    font-size: 30px;
+}
+.thethird a{
+    list-style: none;
+    text-decoration: none;
+    color: rgb(66, 59, 59);
+
+}
+.thefirst{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer img{
+    cursor: no-drop;
+}

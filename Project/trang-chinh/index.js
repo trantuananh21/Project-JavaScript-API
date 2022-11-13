@@ -26,37 +26,37 @@ const netflix = async() => {
 		var description = element.synopsis
 		count++
 
-		img = document.createElement('img')
-		title = document.createElement('h3')
-		date = document.createElement('p')
-		content = document.createElement('p')
+		img = document.createElement('img');
+		img.className = 'images';
+		title = document.createElement('h3');
+		date = document.createElement('p');
+		synopsis = document.createElement('p');
+		content = document.createElement('div');
+		content.className = 'content';
+		contentDetails = document.createElement('div');
+		contentDetails.className = 'content-details fadeIn-bottom'
 
 		img.src = imgLink
 		title.innerHTML = name
 		date.innerHTML = day
-		content.innerHTML = description
+		synopsis.innerHTML = description
 
-		if (count >= 1 & count <= 40){	
-			document.getElementById('images1').appendChild(img)
-			document.getElementById('title1').appendChild(title)
-			document.getElementById('date1').appendChild(date)
-			document.getElementById('description1').appendChild(content)
+		content.appendChild(img)
+		content.appendChild(contentDetails)
+		contentDetails.appendChild(title)
+		contentDetails.appendChild(date)
+		contentDetails.appendChild(synopsis)
 
+		if (count >= 1 & count <= 40){
+			document.getElementById("row-poster1").appendChild(content)
 		}
 		if (count >= 41 & count <= 80){
-			document.getElementById('images2').appendChild(img)
-			document.getElementById('title2').appendChild(title)
-			document.getElementById('date2').appendChild(date)
-			document.getElementById('description2').appendChild(content)
+			document.getElementById("row-poster2").appendChild(content)
 		}
 
 		if (count >= 81 & count <= 100){
-			document.getElementById('images3').appendChild(img)
-			document.getElementById('title3').appendChild(title)
-			document.getElementById('date3').appendChild(date)
-			document.getElementById('description3').appendChild(content)
+			document.getElementById("row-poster3").appendChild(content)
 		}
-
 
 	});
 }

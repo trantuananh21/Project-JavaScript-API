@@ -1,18 +1,31 @@
 function redirect(){
+<<<<<<<< HEAD:Project/trang-chinh/trangchu.js
 	document.getElementById("p2").innerHTML="Cậu Bé Mất Tích (Phần 4) kề về bóng tối trở lại Hawkins vào đúng kỳ nghỉ xuân, khơi mào nỗi kinh hoàng mới, những ký ức đáng ngại và mối đe dọa đáng sợ mới."
 	document.getElementById("p2").style.display="block"
 	document.getElementById("p1").style.display="none"
 	
 	
+========
+	document.getElementById("p2").innerHTML="alonekokokef è"
+	document.getElementById("p2").style.display="block"
+	document.getElementById("p1").style.display="none"
+	
+>>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.js
 }
 
 function redirect2(){
 	document.getElementById("p1").innerHTML="kakaka mận vải"
 	document.getElementById("p1").style.display="block"
 	document.getElementById("p2").style.display="none"
+<<<<<<<< HEAD:Project/trang-chinh/trangchu.js
 	
 }
 const netflix = async() => {
+========
+}
+
+const netflix = async () => {
+>>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.js
 	const options = {
 		method: 'GET',
 		headers: {
@@ -20,7 +33,7 @@ const netflix = async() => {
 			'X-RapidAPI-Host': 'unogs-unogs-v1.p.rapidapi.com'
 		}
 	};
-	
+
 	var response = ''
 
 	response = await fetch('https://unogs-unogs-v1.p.rapidapi.com/search/titles?order_by=date&type=movie', options)

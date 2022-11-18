@@ -17,7 +17,7 @@ body{
 }
 
 .wrapper{
-    background-image: url(../img/netflixbg.jpeg);
+    background-image: url(./imgbackground.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +33,7 @@ body{
     position: absolute;
 }
 
-.login_form{
+.Signup_form{
     padding: 60px;
     height: 630px;
     margin-left: 50%;
@@ -46,16 +46,15 @@ body{
     box-sizing: border-box;
 }
 
-.login_form h1{
+.Signup_form h1{
     color: white;
     font-size: 32px;
     margin-top: 0;
 }
 
-.login_form input{
+.Signup_form input{
     height: 50px;
     width: 100%;
-    margin-bottom: 25px;
     border-radius: 3px;
     color: aliceblue;
     box-sizing: border-box;
@@ -65,33 +64,11 @@ body{
     outline: none;
 }
 
-.maindiv{
-    position: relative;
-    /* max-width: 250px; */
-}
 .input{
-    
-    border-radius:8px ;
-    /* padding: 30px; */
-
-}
-.eye{
-    position: absolute;
-    right:15px;
-    top: 35%;
-    transform: translateY(-50%);
-    max-width: 20px;
-    cursor: pointer;
-    transition: all 0.2s linear;
-}
-.input :focus{
-    border-color: blueviolet;
-}
-.hidden{
-    display: none;
+    margin-bottom: 25px;
 }
 
-.login_form button{
+.Signup_form button{
     height: 50px;
     width: 100%;
     color: white;
@@ -101,28 +78,6 @@ body{
     font-size: 16px;
     border: 1px;
     border: 1px solid red;
-}
-
-.support_place{
-    display: flex;
-    color: #B3B3B3;
-    justify-content: space-between;
-    font-size: 13px;
-}
-
-.remember_me{
-    display: flex;
-    align-items: center;
-}
-
-.remember_me span{
-    margin-right: 10px;
-    height: 25px;
-}
-
-.support_place input{
-    height: 15px;
-    margin-bottom: 25px;
 }
 
 .sign_up{

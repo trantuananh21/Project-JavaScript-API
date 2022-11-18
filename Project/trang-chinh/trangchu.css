@@ -19,38 +19,20 @@ body{
 
 .mainnav{
     font-family:serif;
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
     position:absolute;
     background-color: black;
-========
-    position:fixed;
-    background-color: black;
-    width: 1700px;
-    /* height: 20vh; */
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
     display:flex;
 }
 .forminput{
     display: flex;
     padding: 40px 40px 40px 90px!important;
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
 }
 .forminput button{
-========
-    
-}
-.forminput button{
-    
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
     background-image: linear-gradient(to right,purple,blue,green,yellow,red,orange);
 }
 .mainul{
     float: right;
     display: flex;
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
-========
-
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
 }
 nav ul li a{
     text-decoration: none;
@@ -60,10 +42,6 @@ nav ul li a{
     height: 6vh;
     padding: 20px 50px 60px 60px;
     margin-right: 20px;
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
-========
-    
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
 }
 
 .li1 a:hover{
@@ -77,10 +55,6 @@ nav ul li a{
     height: 6vh;
     font-size: 16px;
     border: none;
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
-========
-    /* display: block; */
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
 }
 .dropup{
     position: relative;
@@ -111,13 +85,8 @@ nav ul li a{
     color: white;
 }
 
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
-========
-
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
 .row{
     color: azure;
-    
 }
 
 .row h2{
@@ -129,14 +98,6 @@ nav ul li a{
     font-weight: 540;
     font-size: 140%;
 }
-/* Row 1 */
-#row-poster1 img{
-    width: 50px;
-    object-fit: contain;
-    max-height: 250px;
-    margin-right: 1%;
-    transition: trasform 450ms;
-}
 
 #row-poster1{
     display: flex;
@@ -145,49 +106,15 @@ nav ul li a{
     padding: 1px 20px 10px;
 }
 
-#row-poster1 h2{
-    font-weight: 1;
-}
-
-#row-poster1 img:hover {
-    transform: scale(1.08);
-}
-
-/* Row 2 */
-#row-poster2 img{
-    width: 100%;
-    object-fit: contain;
-    max-height: 250px;
-    margin-right: 1%;
-    transition: trasform 450ms;
-}
-
-#row-poster2 {
+#row-poster2{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 1px 20px;
 }
 
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
 
 #row-poster3{
-========
-#row-poster2 img:hover {
-    transform: scale(1.08);
-}
-
-/* Row 3 */
-#row-poster3 img{
-    width: 100%;
-    object-fit: contain;
-    max-height: 250px;
-    margin-right: 1%;
-    transition: trasform 450ms;
-}
-
-#row-poster3 {
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
@@ -245,7 +172,6 @@ nav ul li a{
     display: none;
 }
 
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
 .content-details  {
     position: absolute;
     text-align: center;
@@ -269,8 +195,6 @@ nav ul li a{
     height: 100%;
 }
 
-========
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
 .banner {
     height: 100%;
     width: 100%;
@@ -293,7 +217,6 @@ nav ul li a{
     font-weight: 800;
     padding-bottom: 0.3rem;
     font-family: 'Courier New', Courier, monospace;
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
     margin-top: 5%;
 }
 .bannerbtndct{
@@ -302,13 +225,6 @@ nav ul li a{
     height: 110px;
     padding: 10px;
     box-shadow: 5px 10px 18px #000;
-========
-}
-.bannerbtndct{
-    background-color: black;
-    width: 400px;
-    
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css
 }
 
 .banner-description {
@@ -322,7 +238,6 @@ nav ul li a{
 }
 
 .banner-button{
-    
     cursor: pointer;
     color: #fff;
     outline: none;
@@ -346,7 +261,6 @@ nav ul li a{
 
 .banner-fade-bottom{
     margin-top: 145px;
-<<<<<<<< HEAD:Project/trang-chinh/trangchu.css
     height: 13.6vh;
     background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
@@ -393,60 +307,3 @@ footer{
 footer img{
     cursor: no-drop;
 }
-========
-    height: 13.6rem;
-    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
-}
-footer{
-    margin-top: 20px;
-    display: flex;
-    background-color : rgb(45, 22, 22);
-    justify-content: space-around;
-    height: 35vh;
-    
-}
-footer .footernetflix img{
-    padding-top: 10px;
-}
-.mainh1{
-    color:green;
-}
-.theanotherimg img{
-    margin-left: 30px;
-    
-}
-.footernetflix{
-    display: flex;
-    color: red;
-}
-.smallone{
-    color :white;
-    padding-left: 20px;
-}
-
-.thesecond{
-    font-size: 20px;
-    color:rgb(66, 59, 59);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.thethird{
-    font-size: 20px;
-    color: rgb(66, 59, 59);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-}
-span{
-    font-size: 30px;
-}
-.thethird a{
-    list-style: none;
-    text-decoration: none;
-    color: rgb(66, 59, 59);
-
-}
-.thefirst{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-footer img{
-    cursor: no-drop;
-}
->>>>>>>> 9c58dcf34663625b90f1725e1a955c4db13a3414:Project/trang-chinh/index.css

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Javascript</title>
+    <link rel="stylesheet" href="./trangchu.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+</head>
+<body>
+    <header>
+        <nav class="mainnav">
+            <img src="../img/net.jpg" width="100" height="100" alt="">
+            <div class="forminput">
+                <input placeholder="Nhập tên phim ở đây" type="text">
+                <button>Send</button>
+            </div>
+
+            <ul class="mainul">
+                <li class="li1"><a href="#">Home</a></li>
+                <li class="li1"><a href="#">New movies</a></li>
+                <li class="li1"><a href="#">Sign in</a></li>
+                <li class="li1"><a href="#">Follow</a></li>
+
+            </ul>
+            <div class="dropup">
+                <button class="dropupbutton">Top View</button>
+                <div class="thedropupcontent">
+                    <a href="#">Ngày</a>
+                    <a href="#">Tuần</a>
+                    <a href="#">Tháng</a>
+                    <a href="#">Năm</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="banner">
+            <div class="banner-content">
+                <div>
+                    <h1 class="banner-title">STRANGER THINGS</h1>
+                    <video height="300" width="400" loop autoplay muted>
+                        <source src="../video/Stranger Things 4 _ Official Trailer _ Netflix (video-converter.com).mp4"
+                            type="video/mp4">
+                    </video>
+                </div>
+                <div class="bannerbtndct">
+                    <div class="banner-buttons">
+                        <button id="btn1" class="banner-button" onclick="redirect()">Description</button>
+                        <button id="btn2" class="banner-button" onclick="redirect2()">Other part</button>
+                    </div>
+                    <div class="banner-description" id="p2">
+
+                    </div>
+                    <div class="banner-description" id="p1">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="banner-fade-bottom"></div>
+        </div>
+
+        <div class="row">
+            <h2 class="row-title">What's hot today</h2>
+            <div class="slick" id="row-poster1">
+                <div class="content-overlay"></div>
+            </div>
+    
+            <!-- row 2 -->
+            <h2 class="row-title">Popular on Netflix</h2>
+            <div class="slick" id="row-poster2">
+                <div class="content-overlay"></div>
+            </div>
+    
+            <!-- row 3 -->
+            <h2 class="row-title">Trending now</h2>
+            <div class="slick" id="row-poster3">
+                <div class="content-overlay"></div>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="thefirst">
+            <div class="footernetflix">
+                <img class="thefirstimg" src="../img/net2.jpg" width="100px" height="100px" alt="">
+                <h1>NETFLIX</h1>
+            </div>
+            <h1 class="mainh1">Theo dõi chúng tôi</h1>
+            <div class="theanotherimg">
+                <img src="https://png.pngtree.com/element_our/png_detail/20181015/facebook-logo-icon-design-vector-png_124139.jpg"
+                    width="40" height="40" alt="">
+                <img src="https://image.shutterstock.com/image-vector/camera-icon-simple-style-isolated-260nw-1816313213.jpg"
+                    width="40" height="40" alt="">
+                <img src="https://inkythuatso.com/uploads/thumbnails/800/2021/11/logo-twitter-inkythuatso-2-01-27-10-22-11.jpg"
+                    width="40" height="40" alt="">
+            </div>
+        </div>
+        <div class="thesecond">
+            <ul><span>Thành viên phát triển </span>
+                <li>Điều hành :Xuân Hiếu</li>
+                <li>Phát triển : <br>
+                    -Tuấn Anh <br>
+                    -Hưng Long <br>
+                    -Hoàng Phú
+                </li>
+
+            </ul>
+        </div>
+        <div class="thethird">
+            <ul><span>Đường link hữu ích</span>
+                <li><a href="#">Hướng dẫn sử dụng</a></li>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Ghi nhận phản hồi</a></li>
+            </ul>
+            <div class="smallone">
+                <div id="clock"></div>
+                <div id="time"></div>
+            </div>
+        </div>
+        <img src="https://media.istockphoto.com/vectors/like-thumb-up-smiley-emoji-icon-emoticon-smile-emotion-funny-cartoon-vector-id1333793448"
+            width="200" height="200" alt="">
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./trangchu.js"></script>
+</body>
+</html>

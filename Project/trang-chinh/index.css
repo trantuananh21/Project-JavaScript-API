@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}  
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #111;
@@ -108,11 +116,10 @@ nav ul li a{
     transition: trasform 450ms;
 }
 
-#row-poster1 {
+#row-poster1{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 1%;
 }
 
 #row-poster1 h2{
@@ -125,7 +132,7 @@ nav ul li a{
 
 /* Row 2 */
 #row-poster2 img{
-    width: 50px ;
+    width: 100%;
     object-fit: contain;
     max-height: 250px;
     margin-right: 1%;
@@ -136,7 +143,6 @@ nav ul li a{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 1%;
 }
 
 #row-poster2 img:hover {
@@ -145,7 +151,7 @@ nav ul li a{
 
 /* Row 3 */
 #row-poster3 img{
-    width: 50px;
+    width: 100%;
     object-fit: contain;
     max-height: 250px;
     margin-right: 1%;
@@ -156,17 +162,59 @@ nav ul li a{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 1%;
+    padding: 20px;
+} 
+
+.content-details h3{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: capitalize;
 }
 
-#row-poster3 img:hover {
-    transform: scale(1.08);
+.content-details p{
+  color: azure;
+  font-size: 0.8em;
 }
+
+.content{
+    position:sticky;
+    width: 100%;
+    max-width: 250px;
+    margin: 1% 0.5%;
+}
+
+.content p{
+    font-size: 13px;
+}
+  
+.content h2{
+    font-weight: 1;
+}
+
+.content:hover .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    background-color: rgba(0,0,0,0.7);
+    height: 101%;
+    width: 100%;
+}
+
+.content:hover {
+    cursor: pointer;
+}
+
+.content-details{
+    top: 50%;
+  }
 
 ::-webkit-scrollbar{
     display: none;
 }
-
 
 .banner {
     height: 100%;
@@ -232,7 +280,7 @@ nav ul li a{
 
 .banner-fade-bottom{
     margin-top: 145px;
-    height: 13.6vh;
+    height: 13.6rem;
     background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111);
 }
 footer{

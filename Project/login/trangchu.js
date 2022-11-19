@@ -2,8 +2,6 @@ function redirect(){
 	document.getElementById("p2").innerHTML="Cậu Bé Mất Tích (Phần 4) kề về bóng tối trở lại Hawkins vào đúng kỳ nghỉ xuân, khơi mào nỗi kinh hoàng mới, những ký ức đáng ngại và mối đe dọa đáng sợ mới."
 	document.getElementById("p2").style.display="block"
 	document.getElementById("p1").style.display="none"
-	
-	
 }
 
 function redirect2(){
@@ -72,15 +70,12 @@ const netflix = async() => {
 		if (count >= 61 & count <= 90){
 			document.getElementById("row-poster3").appendChild(content)
 		}
-		
-	
-
 	});
-	$('.slick').slick({
-		slidesToShow: 5,
-		slidesToScroll: 3,
-		autoplay: true,
-		autoplaySpeed: 3000,
-	  });
+	// $('.slick').slick({
+	// 	slidesToShow: 5,
+	// 	slidesToScroll: 3,
+	// 	autoplay: true,
+	// 	autoplaySpeed: 3000,
+	//   });
 }
 netflix();

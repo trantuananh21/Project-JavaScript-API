@@ -7,7 +7,7 @@ function redirect(){
 }
 
 function redirect2(){
-	document.getElementById("p1").innerHTML="kakaka mận vải"
+	document.getElementById("p1").innerHTML=" - Part 1 </br> - Part 2 </br>- Part 3 </br> - Part 5 "
 	document.getElementById("p1").style.display="block"
 	document.getElementById("p2").style.display="none"
 	
@@ -61,25 +61,26 @@ const netflix = async() => {
 		contentDetails.appendChild(date)
 		contentDetails.appendChild(synopsis)
 
-		if (count >= 1 & count <= 20){
+		if (count >= 1 & count <= 30){
 			document.getElementById("row-poster1").appendChild(content)
 			
 		}
-		if (count >= 21 & count <= 40){
+		if (count >= 31 & count <= 60){
 			document.getElementById("row-poster2").appendChild(content)
 		}
 
-		if (count >= 41 & count <= 60){
+		if (count >= 61 & count <= 90){
 			document.getElementById("row-poster3").appendChild(content)
 		}
+		
 	
 
 	});
-	// $('.slick').slick({
-	// 	slidesToShow: 3,
-	// 	slidesToScroll: 3,
-	// 	autoplay: true,
-	// 	autoplaySpeed: 3000,
-	//   });
+	$('.slick').slick({
+		slidesToShow: 5,
+		slidesToScroll: 3,
+		autoplay: true,
+		autoplaySpeed: 3000,
+	  });
 }
 netflix();
